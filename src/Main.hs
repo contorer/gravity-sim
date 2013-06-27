@@ -29,7 +29,7 @@ mkYesod "Gravity" [parseRoutes|
 |]
 
 boxColor   = "#000"::String
-bodyColor  = "#333"::String
+bodyColor  = "#383"::String  -- it's green now
 boxSizeX    = 600::Int
 boxSizeY    = 600::Int
 framesPerS = 16::Int
@@ -46,7 +46,7 @@ getHomeR = defaultLayout $ do
         Gravitational interaction demo based on one of 
         <a href="http://www.cse.unsw.edu.au/~chak/" target="_blank">Manuel Chakravarty</a>'s 
         Haskell course exercises. The simulation is done in Haskell on the server. 
-        Client code uses HTML 5 to display instantaneous positions of bodies. 
+        Client code uses HTML 5 to display positions of bodies. 
         It communicates with the (stateless) server using JSON. The web site is written in 
         <a href="http://www.yesodweb.com/" target="_blank">Yesod</a>.
         <div>
